@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cda95fa8-a6a8-4b2c-9ba3-d4d5b65301d4" name="Changes" comment="Initial Commit Take 2" />
+    <list default="true" id="cda95fa8-a6a8-4b2c-9ba3-d4d5b65301d4" name="Changes" comment="Initial Commit Take 2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1731833330229</updated>
-      <workItem from="1731833331606" duration="379000" />
+      <workItem from="1731833331606" duration="434000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit Take 2">
       <option name="closed" value="true" />
@@ -80,7 +82,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731833640940</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial Commit Take 2">
+      <option name="closed" value="true" />
+      <created>1731833743907</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731833743907</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
