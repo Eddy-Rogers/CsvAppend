@@ -1,6 +1,47 @@
+from multiprocessing.context import Process
+
 import openpyxl
 import os
 import argparse
+
+from tkinter import Tk, Label, filedialog, Button
+
+inputvalidation = False
+outputvalidation = False
+
+global inputpath
+global outputpath
+
+
+
+
+#def validate():
+#    return inputvalidation & outputvalidation
+
+#def validcheck():
+#    if validate():
+#        ProcessFiles(inputpath, outputpath)
+
+
+def gui():
+    def onclickinput():
+        global inputpath
+        inputpath = filedialog.askdirectory()
+    def onclickoutput():
+        global outputpath
+        outputpath = filedialog.askdirectory()
+    def execute():
+        global inputpath
+        global outputpath
+        ProcessFiles(inputpath, outputpath)
+    root = Tk()
+    inputbutton = Button(root, text="Input Path", command=onclickinput)
+    inputbutton.pack()
+    outputbutton = Button(root, text="Output Path", command=onclickoutput)
+    outputbutton.pack()
+    execbutton = Button(root, text="Execute", command=execute)
+    execbutton.pack()
+    root.mainloop()
 
 def num_to_excel_col(n):
     if n < 1:
@@ -15,15 +56,13 @@ def num_to_excel_col(n):
 
 def ProcessFiles(inputPath, outputPath):
     # Adding some test comments
-    # another test
-    # third test
-    directory = os.fsencode("./" + inputPath)
+    directory = os.fsencode(inputPath)
     wb = openpyxl.Workbook()
     ws = wb.active
     rowcounter = 1
     for file in os.listdir(directory):
         filename = os.fsdecode(file)
-        read = openpyxl.load_workbook("./" + inputPath + "/" + filename)
+        read = openpyxl.load_workbook(inputPath + "/" + filename)
         dataframe1 = read.active
         counter = rowcounter
         columncounter = 1
@@ -34,21 +73,10 @@ def ProcessFiles(inputPath, outputPath):
                 columncounter+=1
             counter += 1
         rowcounter += 1
-    wb.save("./" + outputPath + "/sample.xlsx")
+    wb.save(outputPath + "/combined.xlsx")
 
 def main():
-    parser = argparse.ArgumentParser(description="This script appends excel files to eachother.")
-
-    # Add a positional argument
-    parser.add_argument("InputPath", help="The name of the folder to pull files from.")
-
-    # Add a positional argument
-    parser.add_argument("OutputPath", help="The name of the folders to put files into.")
-
-    # Parse the arguments
-    args = parser.parse_args()
-
-    ProcessFiles(vars(args)["InputPath"], vars(args)["OutputPath"])
+    gui()
 
 if __name__ == "__main__":
     main()
