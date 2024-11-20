@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cda95fa8-a6a8-4b2c-9ba3-d4d5b65301d4" name="Changes" comment="Added GUI via tkinter; removed system argument processing.&#10;Program will now ask the user to specify an input and an output folder, and use those in the code.">
+    <list default="true" id="cda95fa8-a6a8-4b2c-9ba3-d4d5b65301d4" name="Changes" comment="Improved UI">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/CsvAppend.py" beforeDir="false" afterPath="$PROJECT_DIR$/.venv/Scripts/CsvAppend.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Scripts/activate_this.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +53,7 @@
     "Python.CsvAppend.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "UI-Dev",
-    "last_opened_file_path": "C:/Users/Eddy/PycharmProjects/CsvAppend/.venv/Scripts",
+    "last_opened_file_path": "C:/Users/Eddy/PycharmProjects/CsvAppend/.venv/Scripts/dist/CsvAppend",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -66,8 +64,15 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Eddy\PycharmProjects\CsvAppend\.venv\Scripts\dist\CsvAppend" />
+      <recent name="C:\Users\Eddy\PycharmProjects\CsvAppend\.venv\Scripts\dist\CsvAppend\theme" />
+      <recent name="C:\Users\Eddy\PycharmProjects\CsvAppend\.venv\Scripts\dist\CsvAppend\_internal" />
       <recent name="C:\Users\Eddy\PycharmProjects\CsvAppend\.venv\Scripts" />
       <recent name="C:\Users\Eddy\PycharmProjects\CsvAppend\.venv\Scripts\Output" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Eddy\PycharmProjects\CsvAppend\.venv\Scripts\dist\CsvAppend\_internal" />
+      <recent name="C:\Users\Eddy\PycharmProjects\CsvAppend" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -86,7 +91,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1731833330229</updated>
-      <workItem from="1731833331606" duration="17315000" />
+      <workItem from="1731833331606" duration="21636000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit Take 2">
       <option name="closed" value="true" />
@@ -120,7 +125,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731911820397</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Improved UI">
+      <option name="closed" value="true" />
+      <created>1731985380566</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1731985380566</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,7 +143,8 @@
     <MESSAGE value="Initial Commit Take 2" />
     <MESSAGE value="Workspace changes" />
     <MESSAGE value="Added GUI via tkinter; removed system argument processing.&#10;Program will now ask the user to specify an input and an output folder, and use those in the code." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added GUI via tkinter; removed system argument processing.&#10;Program will now ask the user to specify an input and an output folder, and use those in the code." />
+    <MESSAGE value="Improved UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved UI" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -143,6 +157,6 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CsvAppend$CsvAppend.coverage" NAME="CsvAppend Coverage Results" MODIFIED="1731957877508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv/Scripts" />
+    <SUITE FILE_PATH="coverage/CsvAppend$CsvAppend.coverage" NAME="CsvAppend Coverage Results" MODIFIED="1732069042346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv/Scripts" />
   </component>
 </project>
